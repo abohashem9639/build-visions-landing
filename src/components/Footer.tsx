@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Facebook, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Linkedin, Twitter, Globe } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">شركة الاستشارات الهندسية</h3>
+            <h3 className="text-2xl font-bold mb-4">شركة مجاز الخليج المحدودة</h3>
             <p className="text-primary-foreground/80 mb-4">
               رائدون في تقديم خدمات الفحص والاختبار الهندسي بأعلى معايير الجودة والدقة
             </p>
@@ -17,15 +17,29 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent" />
-                <span className="text-primary-foreground/80">+963 xxx xxx xxx</span>
+                <div className="flex flex-col text-primary-foreground/80">
+                  <span dir="ltr">+966 54 938 6526</span>
+                  <span dir="ltr">+966 56 910 5824</span>
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent" />
-                <span className="text-primary-foreground/80">info@engineering-consult.com</span>
+                <span className="text-primary-foreground/80">majazalkhalij@gmail.com</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Globe className="h-5 w-5 text-accent" />
+                <a 
+                  href="https://www.majaz.com.sa" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/80 hover:text-accent transition-colors"
+                >
+                  www.majaz.com.sa
+                </a>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-accent" />
-                <span className="text-primary-foreground/80">دمشق، سوريا</span>
+                <span className="text-primary-foreground/80">السعودية - المدينة المنورة</span>
               </div>
             </div>
           </div>
@@ -68,7 +82,7 @@ export const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center">
           <p className="text-primary-foreground/60">
-            © 2024 شركة الاستشارات الهندسية. جميع الحقوق محفوظة.
+            جميع الحقوق محفوظة لشركة مجاز الخليج المحدودة © 2024
           </p>
         </div>
       </div>
